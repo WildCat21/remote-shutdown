@@ -13,7 +13,7 @@ def main():
     print('Verbunden mit %s:%s' % (remotehost, remoteport))
     data = conn.recv(BUFSIZE)
     print(data)
-    if data == "a":
+    if data == "shutdown":
         os.system("shutdown.bat")
     else:
         pass
